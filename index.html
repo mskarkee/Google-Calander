@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamro Patro Calendar</title>
+  <style>
+    /* ensure full-screen coverage */
+    html, body {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      /* use the locally-hosted image */
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+
+      /* flex to center-vertically & push iframe right */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    iframe {
+      border: none;
+      width: 800px;
+      height: 840px;
+      margin-right: 40px;   /* optional gap from right edge */
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <iframe
+    src="https://www.hamropatro.com/widgets/calender-full.php"
+    scrolling="no"
+    marginwidth="0"
+    marginheight="0"
+    allowtransparency="true">
+  </iframe>
+</body>
+</html>
